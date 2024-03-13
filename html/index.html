@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Sampler</title>
+        <link rel="stylesheet" href="bundle.css" />
+        <script defer src="bundle.js"></script>
+    </head>
+    <body class="g-base">
+        <div class="g-loading-overlay"></div>
+
+        <div>
+            <header>
+                <div class="g-heading">
+                    Portfolio Sampler
+                    <picture>
+                        <source media="(max-width:755px)" srcset="images/mobile.png">
+                        <img src="images/desktop.png" width="50" height="50" alt="Current Device Icon">
+                    </picture>
+                </div>
+                <div class="g-sub-heading">NSCC IT Web Programming : Truro Campus</div>
+            </header>
+            <nav>
+                <div class="g-radios">
+                    View: <input name="view" type="radio" value="1" checked="checked">
+                    Selected <input name="view" type="radio" value="2">All
+                </div>
+            </nav>    
+            
+            <main>
+                <div id="p-selected-view">
+
+                    <div id="about">This portfolio is the property of Hiren Gajjar. I am a student of the IT Web Programming program at the NSCC</div>
+                    <div>
+                        <nav id="s-navigation">
+                            <select></select>
+                            <a href="#" id="lnkAbout">About Me</a>
+                            <a href="#" id="lnckTextSize">Increase Text</a>
+                        </nav>
+                        
+                        <div id="s-content">
+                            <div class="title"></div>
+                            <div class="description"></div>
+                            <div>
+                                <a href="#" target="_blank" class="link"></a>
+                            </div>
+                            <div class="iconset">
+                                <img src="images/blank.png" alt="Portfolio Sample" width="100" height="100" class="icon">
+                                <img src="images/blank.png" alt="Portfolio Sample" width="50" height="50" class="icon">
+                                <img src="images/blank.png" alt="Portfolio Sample" width="50" height="50" class="icon">
+                                <img src="images/blank.png" alt="Portfolio Sample" width="50" height="50" class="icon">
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div id="p-all-view"></div>
+            </main>
+        </div>
+
+		<div id="sampleTemplate" style="display:none">
+			<div>
+				<img src="#" alt="Portfolio Sample">
+			</div>
+			<div>
+				<div class="title"></div>
+				<div class="description"></div>
+				<a href="#" target="_blank"></a>
+			</div>
+		</div>        
+    </body>
+</html>
